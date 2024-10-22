@@ -1,0 +1,2146 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en">this is ontology about vehicles</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Accident"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Autonomous_vehicle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Camera"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Control_system"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cyclists"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Delivery_Package"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Destination"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Energy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Environment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Foggy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GPS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Green"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Highway"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LiDAR"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Maintenance_Service"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Minimize_delivery_time"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Motorcycles"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Objective"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Obstacles"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Orang"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pedestrians"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Position"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Radar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rainy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RoadUser"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Road_work"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Route"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RuralRoad"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Snowy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Speed_Limit_Sign"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stop_Sign"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TrafficRules"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Traffic_Light"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UltrasonicSensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UrbanRoad"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Weather_conditions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cars"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#clear"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#optimization_algorithm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#package"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#plan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#planner"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#red"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Communicate_with"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Has_Position"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Is_Controled_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Is_delivered_to"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#avoids"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#change_route"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#controll"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#deliversPackage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#detectsObstacle"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#follow"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#generate__plans"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDestination"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTrafficLightState"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasWeatherCondition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_planner"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#limit_speed"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#minimize_delivery_time"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#operatesInEnvironment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#stop_v"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#use_algorithm"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usesSensor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#uses_GPS"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#uses_plan"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Address_Location"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Color"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Control_system"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Delivery_address"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Delivery_time"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Dimensions_P"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#GPS_coordinates"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ID_v"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Num_Package"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#P_Priority"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#P_Type"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Recipient"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#V_type"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Weight_P"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasBatteryLevel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasObstacleDistance"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasRoadSpeedLimit"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSpeed"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTemperature"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasVisibility"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#loadCapacity_v"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#status_v"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#type_algo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ClearWeather1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ControlSystem1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ControlSystem2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ControlSystem3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DeliveryPackage1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Destination1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Destination2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Destination3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FoggyWeather1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GPS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GreenLight1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Highway1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MaintenanceService1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MinimizeDeliveryTimeObjective1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Obstacle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Package1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Package2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Package3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Position1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Position2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Position3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RainyWeather1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RedLight1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RoadUser1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RoadWork1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RuralRoad1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SnowyWeather1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SpeedLimitSign1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StopSign1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TrafficLight1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UrbanRoad1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#algorithm"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#plan1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#plan2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#plan3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#planner1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#planner2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#planner3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#route"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sensors"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#vehicle_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#vehicle_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#vehicle_3"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Accident"/>
+        <Class IRI="#Obstacles"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Autonomous_vehicle"/>
+        <Class IRI="#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Camera"/>
+        <Class IRI="#Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Control_system"/>
+        <Class IRI="#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cyclists"/>
+        <Class IRI="#RoadUser"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Delivery_Package"/>
+        <Class IRI="#Objective"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Foggy"/>
+        <Class IRI="#Weather_conditions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Green"/>
+        <Class IRI="#Traffic_Light"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Highway"/>
+        <Class IRI="#Environment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LiDAR"/>
+        <Class IRI="#Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Minimize_delivery_time"/>
+        <Class IRI="#Objective"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Motorcycles"/>
+        <Class IRI="#RoadUser"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Orang"/>
+        <Class IRI="#Traffic_Light"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pedestrians"/>
+        <Class IRI="#RoadUser"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Radar"/>
+        <Class IRI="#Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rainy"/>
+        <Class IRI="#Weather_conditions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RoadUser"/>
+        <Class IRI="#Obstacles"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Road_work"/>
+        <Class IRI="#Obstacles"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RuralRoad"/>
+        <Class IRI="#Environment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sensor"/>
+        <Class IRI="#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Snowy"/>
+        <Class IRI="#Weather_conditions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Speed_Limit_Sign"/>
+        <Class IRI="#TrafficRules"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stop_Sign"/>
+        <Class IRI="#TrafficRules"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Traffic_Light"/>
+        <Class IRI="#TrafficRules"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UltrasonicSensor"/>
+        <Class IRI="#Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UrbanRoad"/>
+        <Class IRI="#Environment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Weather_conditions"/>
+        <Class IRI="#Obstacles"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cars"/>
+        <Class IRI="#RoadUser"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#clear"/>
+        <Class IRI="#Weather_conditions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#planner"/>
+        <Class IRI="#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#red"/>
+        <Class IRI="#Traffic_Light"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Obstacles"/>
+        <NamedIndividual IRI="#ClearWeather1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Weather_conditions"/>
+        <NamedIndividual IRI="#ClearWeather1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Agent"/>
+        <NamedIndividual IRI="#ControlSystem1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Control_system"/>
+        <NamedIndividual IRI="#ControlSystem1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Agent"/>
+        <NamedIndividual IRI="#ControlSystem2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Control_system"/>
+        <NamedIndividual IRI="#ControlSystem2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Agent"/>
+        <NamedIndividual IRI="#ControlSystem3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Control_system"/>
+        <NamedIndividual IRI="#ControlSystem3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Objective"/>
+        <NamedIndividual IRI="#DeliveryPackage1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Destination"/>
+        <NamedIndividual IRI="#Destination1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Destination"/>
+        <NamedIndividual IRI="#Destination2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Destination"/>
+        <NamedIndividual IRI="#Destination3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Foggy"/>
+        <NamedIndividual IRI="#FoggyWeather1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Obstacles"/>
+        <NamedIndividual IRI="#FoggyWeather1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Weather_conditions"/>
+        <NamedIndividual IRI="#FoggyWeather1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GPS"/>
+        <NamedIndividual IRI="#GPS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Green"/>
+        <NamedIndividual IRI="#GreenLight1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TrafficRules"/>
+        <NamedIndividual IRI="#GreenLight1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Traffic_Light"/>
+        <NamedIndividual IRI="#GreenLight1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Environment"/>
+        <NamedIndividual IRI="#Highway1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Maintenance_Service"/>
+        <NamedIndividual IRI="#MaintenanceService1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Objective"/>
+        <NamedIndividual IRI="#MinimizeDeliveryTimeObjective1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Obstacles"/>
+        <NamedIndividual IRI="#Obstacle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#package"/>
+        <NamedIndividual IRI="#Package1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#package"/>
+        <NamedIndividual IRI="#Package2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#package"/>
+        <NamedIndividual IRI="#Package3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Position"/>
+        <NamedIndividual IRI="#Position1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Position"/>
+        <NamedIndividual IRI="#Position2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Position"/>
+        <NamedIndividual IRI="#Position3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Obstacles"/>
+        <NamedIndividual IRI="#RainyWeather1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rainy"/>
+        <NamedIndividual IRI="#RainyWeather1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Weather_conditions"/>
+        <NamedIndividual IRI="#RainyWeather1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TrafficRules"/>
+        <NamedIndividual IRI="#RedLight1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Traffic_Light"/>
+        <NamedIndividual IRI="#RedLight1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#red"/>
+        <NamedIndividual IRI="#RedLight1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Obstacles"/>
+        <NamedIndividual IRI="#RoadUser1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RoadUser"/>
+        <NamedIndividual IRI="#RoadUser1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Obstacles"/>
+        <NamedIndividual IRI="#RoadWork1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Road_work"/>
+        <NamedIndividual IRI="#RoadWork1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Environment"/>
+        <NamedIndividual IRI="#RuralRoad1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Obstacles"/>
+        <NamedIndividual IRI="#SnowyWeather1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Snowy"/>
+        <NamedIndividual IRI="#SnowyWeather1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Weather_conditions"/>
+        <NamedIndividual IRI="#SnowyWeather1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Speed_Limit_Sign"/>
+        <NamedIndividual IRI="#SpeedLimitSign1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TrafficRules"/>
+        <NamedIndividual IRI="#SpeedLimitSign1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Stop_Sign"/>
+        <NamedIndividual IRI="#StopSign1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TrafficRules"/>
+        <NamedIndividual IRI="#StopSign1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TrafficRules"/>
+        <NamedIndividual IRI="#TrafficLight1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Traffic_Light"/>
+        <NamedIndividual IRI="#TrafficLight1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Environment"/>
+        <NamedIndividual IRI="#UrbanRoad1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#optimization_algorithm"/>
+        <NamedIndividual IRI="#algorithm"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Agent"/>
+        <NamedIndividual IRI="#plan1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#plan"/>
+        <NamedIndividual IRI="#plan1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#planner"/>
+        <NamedIndividual IRI="#plan1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Agent"/>
+        <NamedIndividual IRI="#plan2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#plan"/>
+        <NamedIndividual IRI="#plan2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#planner"/>
+        <NamedIndividual IRI="#plan2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Agent"/>
+        <NamedIndividual IRI="#plan3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#plan"/>
+        <NamedIndividual IRI="#plan3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#planner"/>
+        <NamedIndividual IRI="#plan3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Agent"/>
+        <NamedIndividual IRI="#planner1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#planner"/>
+        <NamedIndividual IRI="#planner1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Agent"/>
+        <NamedIndividual IRI="#planner2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#planner"/>
+        <NamedIndividual IRI="#planner2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Agent"/>
+        <NamedIndividual IRI="#planner3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#planner"/>
+        <NamedIndividual IRI="#planner3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Accident"/>
+        <NamedIndividual IRI="#route"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Obstacles"/>
+        <NamedIndividual IRI="#route"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Road_work"/>
+        <NamedIndividual IRI="#route"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Route"/>
+        <NamedIndividual IRI="#route"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Agent"/>
+        <NamedIndividual IRI="#sensors"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sensor"/>
+        <NamedIndividual IRI="#sensors"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Agent"/>
+        <NamedIndividual IRI="#vehicle_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Autonomous_vehicle"/>
+        <NamedIndividual IRI="#vehicle_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Agent"/>
+        <NamedIndividual IRI="#vehicle_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Autonomous_vehicle"/>
+        <NamedIndividual IRI="#vehicle_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Agent"/>
+        <NamedIndividual IRI="#vehicle_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Autonomous_vehicle"/>
+        <NamedIndividual IRI="#vehicle_3"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#generate__plans"/>
+        <NamedIndividual IRI="#plan1"/>
+        <NamedIndividual IRI="#planner1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#generate__plans"/>
+        <NamedIndividual IRI="#plan2"/>
+        <NamedIndividual IRI="#planner2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#generate__plans"/>
+        <NamedIndividual IRI="#plan3"/>
+        <NamedIndividual IRI="#planner3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#change_route"/>
+        <NamedIndividual IRI="#planner1"/>
+        <NamedIndividual IRI="#route"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#deliversPackage"/>
+        <NamedIndividual IRI="#planner1"/>
+        <NamedIndividual IRI="#Package1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#generate__plans"/>
+        <NamedIndividual IRI="#planner1"/>
+        <NamedIndividual IRI="#plan1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#minimize_delivery_time"/>
+        <NamedIndividual IRI="#planner1"/>
+        <NamedIndividual IRI="#Package1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#use_algorithm"/>
+        <NamedIndividual IRI="#planner1"/>
+        <NamedIndividual IRI="#algorithm"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usesSensor"/>
+        <NamedIndividual IRI="#planner1"/>
+        <NamedIndividual IRI="#Position1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usesSensor"/>
+        <NamedIndividual IRI="#planner1"/>
+        <NamedIndividual IRI="#sensors"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#uses_GPS"/>
+        <NamedIndividual IRI="#planner1"/>
+        <NamedIndividual IRI="#GPS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#change_route"/>
+        <NamedIndividual IRI="#planner2"/>
+        <NamedIndividual IRI="#route"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#deliversPackage"/>
+        <NamedIndividual IRI="#planner2"/>
+        <NamedIndividual IRI="#Package2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#generate__plans"/>
+        <NamedIndividual IRI="#planner2"/>
+        <NamedIndividual IRI="#plan2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#minimize_delivery_time"/>
+        <NamedIndividual IRI="#planner2"/>
+        <NamedIndividual IRI="#Package2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#use_algorithm"/>
+        <NamedIndividual IRI="#planner2"/>
+        <NamedIndividual IRI="#algorithm"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usesSensor"/>
+        <NamedIndividual IRI="#planner2"/>
+        <NamedIndividual IRI="#Position2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usesSensor"/>
+        <NamedIndividual IRI="#planner2"/>
+        <NamedIndividual IRI="#sensors"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#uses_GPS"/>
+        <NamedIndividual IRI="#planner2"/>
+        <NamedIndividual IRI="#GPS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#change_route"/>
+        <NamedIndividual IRI="#planner3"/>
+        <NamedIndividual IRI="#route"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#deliversPackage"/>
+        <NamedIndividual IRI="#planner3"/>
+        <NamedIndividual IRI="#Package3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#generate__plans"/>
+        <NamedIndividual IRI="#planner3"/>
+        <NamedIndividual IRI="#plan3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#minimize_delivery_time"/>
+        <NamedIndividual IRI="#planner3"/>
+        <NamedIndividual IRI="#Package3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#use_algorithm"/>
+        <NamedIndividual IRI="#planner3"/>
+        <NamedIndividual IRI="#algorithm"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usesSensor"/>
+        <NamedIndividual IRI="#planner3"/>
+        <NamedIndividual IRI="#Position3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usesSensor"/>
+        <NamedIndividual IRI="#planner3"/>
+        <NamedIndividual IRI="#sensors"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#uses_GPS"/>
+        <NamedIndividual IRI="#planner3"/>
+        <NamedIndividual IRI="#GPS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Communicate_with"/>
+        <NamedIndividual IRI="#vehicle_1"/>
+        <NamedIndividual IRI="#ControlSystem1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Has_Position"/>
+        <NamedIndividual IRI="#vehicle_1"/>
+        <NamedIndividual IRI="#Position1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#avoids"/>
+        <NamedIndividual IRI="#vehicle_1"/>
+        <NamedIndividual IRI="#Obstacle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#change_route"/>
+        <NamedIndividual IRI="#vehicle_1"/>
+        <NamedIndividual IRI="#route"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#deliversPackage"/>
+        <NamedIndividual IRI="#vehicle_1"/>
+        <NamedIndividual IRI="#Package1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#detectsObstacle"/>
+        <NamedIndividual IRI="#vehicle_1"/>
+        <NamedIndividual IRI="#Obstacle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_planner"/>
+        <NamedIndividual IRI="#vehicle_1"/>
+        <NamedIndividual IRI="#planner1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#minimize_delivery_time"/>
+        <NamedIndividual IRI="#vehicle_1"/>
+        <NamedIndividual IRI="#Package1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usesSensor"/>
+        <NamedIndividual IRI="#vehicle_1"/>
+        <NamedIndividual IRI="#Position1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usesSensor"/>
+        <NamedIndividual IRI="#vehicle_1"/>
+        <NamedIndividual IRI="#sensors"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#uses_plan"/>
+        <NamedIndividual IRI="#vehicle_1"/>
+        <NamedIndividual IRI="#plan1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Communicate_with"/>
+        <NamedIndividual IRI="#vehicle_2"/>
+        <NamedIndividual IRI="#ControlSystem2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Has_Position"/>
+        <NamedIndividual IRI="#vehicle_2"/>
+        <NamedIndividual IRI="#Position2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#avoids"/>
+        <NamedIndividual IRI="#vehicle_2"/>
+        <NamedIndividual IRI="#Obstacle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#change_route"/>
+        <NamedIndividual IRI="#vehicle_2"/>
+        <NamedIndividual IRI="#route"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#deliversPackage"/>
+        <NamedIndividual IRI="#vehicle_2"/>
+        <NamedIndividual IRI="#Package2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#detectsObstacle"/>
+        <NamedIndividual IRI="#vehicle_2"/>
+        <NamedIndividual IRI="#Obstacle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_planner"/>
+        <NamedIndividual IRI="#vehicle_2"/>
+        <NamedIndividual IRI="#planner2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#minimize_delivery_time"/>
+        <NamedIndividual IRI="#vehicle_2"/>
+        <NamedIndividual IRI="#Package2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usesSensor"/>
+        <NamedIndividual IRI="#vehicle_2"/>
+        <NamedIndividual IRI="#Position2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usesSensor"/>
+        <NamedIndividual IRI="#vehicle_2"/>
+        <NamedIndividual IRI="#sensors"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#uses_plan"/>
+        <NamedIndividual IRI="#vehicle_2"/>
+        <NamedIndividual IRI="#plan2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Communicate_with"/>
+        <NamedIndividual IRI="#vehicle_3"/>
+        <NamedIndividual IRI="#ControlSystem3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Has_Position"/>
+        <NamedIndividual IRI="#vehicle_3"/>
+        <NamedIndividual IRI="#Position3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#avoids"/>
+        <NamedIndividual IRI="#vehicle_3"/>
+        <NamedIndividual IRI="#Obstacle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#change_route"/>
+        <NamedIndividual IRI="#vehicle_3"/>
+        <NamedIndividual IRI="#route"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#deliversPackage"/>
+        <NamedIndividual IRI="#vehicle_3"/>
+        <NamedIndividual IRI="#Package3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#detectsObstacle"/>
+        <NamedIndividual IRI="#vehicle_3"/>
+        <NamedIndividual IRI="#Obstacle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_planner"/>
+        <NamedIndividual IRI="#vehicle_3"/>
+        <NamedIndividual IRI="#planner3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#minimize_delivery_time"/>
+        <NamedIndividual IRI="#vehicle_3"/>
+        <NamedIndividual IRI="#Package3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usesSensor"/>
+        <NamedIndividual IRI="#vehicle_3"/>
+        <NamedIndividual IRI="#Position3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usesSensor"/>
+        <NamedIndividual IRI="#vehicle_3"/>
+        <NamedIndividual IRI="#sensors"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#uses_plan"/>
+        <NamedIndividual IRI="#vehicle_3"/>
+        <NamedIndividual IRI="#plan3"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Delivery_address"/>
+        <NamedIndividual IRI="#Package1"/>
+        <Literal>700 dwellings, block A, number 15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Dimensions_P"/>
+        <NamedIndividual IRI="#Package1"/>
+        <Literal>30 cm x 20 cm x 10 cm</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Num_Package"/>
+        <NamedIndividual IRI="#Package1"/>
+        <Literal>TRK12345</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#P_Priority"/>
+        <NamedIndividual IRI="#Package1"/>
+        <Literal>High</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#P_Type"/>
+        <NamedIndividual IRI="#Package1"/>
+        <Literal>Perishable</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Recipient"/>
+        <NamedIndividual IRI="#Package1"/>
+        <Literal>Amara Fatima Zahra</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Weight_P"/>
+        <NamedIndividual IRI="#Package1"/>
+        <Literal>1.5 kg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Delivery_address"/>
+        <NamedIndividual IRI="#Package2"/>
+        <Literal>Sonatiba, block C, number 35</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Dimensions_P"/>
+        <NamedIndividual IRI="#Package2"/>
+        <Literal>50 cm x 40 cm x 30 cm</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Num_Package"/>
+        <NamedIndividual IRI="#Package2"/>
+        <Literal>TRK67890</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#P_Priority"/>
+        <NamedIndividual IRI="#Package2"/>
+        <Literal>Low</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#P_Type"/>
+        <NamedIndividual IRI="#Package2"/>
+        <Literal>Fragile</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Recipient"/>
+        <NamedIndividual IRI="#Package2"/>
+        <Literal>Guerroudj Bochra</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Weight_P"/>
+        <NamedIndividual IRI="#Package2"/>
+        <Literal>5.0 kg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Delivery_address"/>
+        <NamedIndividual IRI="#Package3"/>
+        <Literal>District 128, No. 9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Dimensions_P"/>
+        <NamedIndividual IRI="#Package3"/>
+        <Literal>100 cm x 80 cm x 50 cm</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Num_Package"/>
+        <NamedIndividual IRI="#Package3"/>
+        <Literal>TRK54321</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#P_Priority"/>
+        <NamedIndividual IRI="#Package3"/>
+        <Literal>Medium</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#P_Type"/>
+        <NamedIndividual IRI="#Package3"/>
+        <Literal>LargeItem</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Recipient"/>
+        <NamedIndividual IRI="#Package3"/>
+        <Literal>Sid Ali</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Weight_P"/>
+        <NamedIndividual IRI="#Package3"/>
+        <Literal>20.0 kg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type_algo"/>
+        <NamedIndividual IRI="#planner1"/>
+        <Literal>A*</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type_algo"/>
+        <NamedIndividual IRI="#planner2"/>
+        <Literal>Ant Colony Optimization (ACO)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type_algo"/>
+        <NamedIndividual IRI="#planner3"/>
+        <Literal>A*</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Color"/>
+        <NamedIndividual IRI="#vehicle_1"/>
+        <Literal xml:lang="en">red</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID_v"/>
+        <NamedIndividual IRI="#vehicle_1"/>
+        <Literal>12A34</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#loadCapacity_v"/>
+        <NamedIndividual IRI="#vehicle_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">50.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#status_v"/>
+        <NamedIndividual IRI="#vehicle_1"/>
+        <Literal>Available</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Color"/>
+        <NamedIndividual IRI="#vehicle_2"/>
+        <Literal xml:lang="en">red</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID_v"/>
+        <NamedIndividual IRI="#vehicle_2"/>
+        <Literal>12B34</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#loadCapacity_v"/>
+        <NamedIndividual IRI="#vehicle_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">100.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#status_v"/>
+        <NamedIndividual IRI="#vehicle_2"/>
+        <Literal>In transit</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Color"/>
+        <NamedIndividual IRI="#vehicle_3"/>
+        <Literal xml:lang="en">red</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID_v"/>
+        <NamedIndividual IRI="#vehicle_3"/>
+        <Literal>12C34</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#loadCapacity_v"/>
+        <NamedIndividual IRI="#vehicle_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">500.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#status_v"/>
+        <NamedIndividual IRI="#vehicle_3"/>
+        <Literal>In maintenance</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Communicate_with"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Communicate_with"/>
+        <Class IRI="#Autonomous_vehicle"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Has_Position"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Has_Position"/>
+        <Class IRI="#Autonomous_vehicle"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Is_Controled_by"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Is_Controled_by"/>
+        <Class IRI="#Autonomous_vehicle"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Is_delivered_to"/>
+        <Class IRI="#package"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#avoids"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#avoids"/>
+        <Class IRI="#Autonomous_vehicle"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#change_route"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#change_route"/>
+        <Class IRI="#Autonomous_vehicle"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#controll"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#controll"/>
+        <Class IRI="#Control_system"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#deliversPackage"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#deliversPackage"/>
+        <Class IRI="#Autonomous_vehicle"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#detectsObstacle"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#detectsObstacle"/>
+        <Class IRI="#Autonomous_vehicle"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#follow"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#follow"/>
+        <Class IRI="#Autonomous_vehicle"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#generate__plans"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#generate__plans"/>
+        <Class IRI="#planner"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDestination"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDestination"/>
+        <Class IRI="#Autonomous_vehicle"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTrafficLightState"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTrafficLightState"/>
+        <Class IRI="#Autonomous_vehicle"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasWeatherCondition"/>
+        <Class IRI="#Environment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_planner"/>
+        <Class IRI="#Autonomous_vehicle"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#limit_speed"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#limit_speed"/>
+        <Class IRI="#Autonomous_vehicle"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#minimize_delivery_time"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#minimize_delivery_time"/>
+        <Class IRI="#Autonomous_vehicle"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#operatesInEnvironment"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#operatesInEnvironment"/>
+        <Class IRI="#Autonomous_vehicle"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#stop_v"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#stop_v"/>
+        <Class IRI="#Autonomous_vehicle"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#use_algorithm"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#use_algorithm"/>
+        <Class IRI="#planner"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usesSensor"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usesSensor"/>
+        <Class IRI="#Autonomous_vehicle"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#uses_GPS"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#uses_GPS"/>
+        <Class IRI="#Control_system"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#uses_GPS"/>
+        <Class IRI="#Position"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#uses_GPS"/>
+        <Class IRI="#planner"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#uses_plan"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#uses_plan"/>
+        <Class IRI="#Autonomous_vehicle"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Communicate_with"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Communicate_with"/>
+        <Class IRI="#Control_system"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Has_Position"/>
+        <Class IRI="#Position"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Is_Controled_by"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Is_Controled_by"/>
+        <Class IRI="#Control_system"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Is_delivered_to"/>
+        <Class IRI="#Destination"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#avoids"/>
+        <Class IRI="#Obstacles"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#change_route"/>
+        <Class IRI="#Accident"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#change_route"/>
+        <Class IRI="#Obstacles"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#change_route"/>
+        <Class IRI="#Road_work"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#controll"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#controll"/>
+        <Class IRI="#Autonomous_vehicle"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#deliversPackage"/>
+        <Class IRI="#Delivery_Package"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#deliversPackage"/>
+        <Class IRI="#Objective"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#detectsObstacle"/>
+        <Class IRI="#Obstacles"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#follow"/>
+        <Class IRI="#TrafficRules"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#generate__plans"/>
+        <Class IRI="#plan"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDestination"/>
+        <Class IRI="#Destination"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTrafficLightState"/>
+        <Class IRI="#TrafficRules"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTrafficLightState"/>
+        <Class IRI="#Traffic_Light"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasWeatherCondition"/>
+        <Class IRI="#Obstacles"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasWeatherCondition"/>
+        <Class IRI="#Weather_conditions"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#limit_speed"/>
+        <Class IRI="#Obstacles"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#limit_speed"/>
+        <Class IRI="#RoadUser"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#limit_speed"/>
+        <Class IRI="#Speed_Limit_Sign"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#limit_speed"/>
+        <Class IRI="#TrafficRules"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#limit_speed"/>
+        <Class IRI="#Weather_conditions"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#minimize_delivery_time"/>
+        <Class IRI="#Minimize_delivery_time"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#minimize_delivery_time"/>
+        <Class IRI="#Objective"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#operatesInEnvironment"/>
+        <Class IRI="#Environment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#stop_v"/>
+        <Class IRI="#Stop_Sign"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#stop_v"/>
+        <Class IRI="#TrafficRules"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#stop_v"/>
+        <Class IRI="#Traffic_Light"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#stop_v"/>
+        <Class IRI="#red"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#use_algorithm"/>
+        <Class IRI="#optimization_algorithm"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usesSensor"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usesSensor"/>
+        <Class IRI="#Sensor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#uses_GPS"/>
+        <Class IRI="#GPS"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#uses_plan"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#uses_plan"/>
+        <Class IRI="#planner"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Address_Location"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Color"/>
+        <Class IRI="#Agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Color"/>
+        <Class IRI="#Autonomous_vehicle"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Control_system"/>
+        <Class IRI="#Agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Control_system"/>
+        <Class IRI="#Control_system"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Delivery_address"/>
+        <Class IRI="#Destination"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Delivery_time"/>
+        <Class IRI="#Delivery_Package"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Delivery_time"/>
+        <Class IRI="#Objective"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Dimensions_P"/>
+        <Class IRI="#package"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#GPS_coordinates"/>
+        <Class IRI="#Destination"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ID_v"/>
+        <Class IRI="#Agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ID_v"/>
+        <Class IRI="#Autonomous_vehicle"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Num_Package"/>
+        <Class IRI="#package"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#P_Priority"/>
+        <Class IRI="#package"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#P_Type"/>
+        <Class IRI="#package"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Recipient"/>
+        <Class IRI="#Destination"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Recipient"/>
+        <Class IRI="#package"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#V_type"/>
+        <Class IRI="#Agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#V_type"/>
+        <Class IRI="#Autonomous_vehicle"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Weight_P"/>
+        <Class IRI="#package"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasBatteryLevel"/>
+        <Class IRI="#Agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasBatteryLevel"/>
+        <Class IRI="#Autonomous_vehicle"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasObstacleDistance"/>
+        <Class IRI="#Obstacles"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasRoadSpeedLimit"/>
+        <Class IRI="#Environment"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSpeed"/>
+        <Class IRI="#Agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSpeed"/>
+        <Class IRI="#Autonomous_vehicle"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTemperature"/>
+        <Class IRI="#Obstacles"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTemperature"/>
+        <Class IRI="#Weather_conditions"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasVisibility"/>
+        <Class IRI="#Obstacles"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasVisibility"/>
+        <Class IRI="#Weather_conditions"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#loadCapacity_v"/>
+        <Class IRI="#Agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#loadCapacity_v"/>
+        <Class IRI="#Autonomous_vehicle"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#status_v"/>
+        <Class IRI="#Agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#status_v"/>
+        <Class IRI="#Autonomous_vehicle"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#type_algo"/>
+        <Class IRI="#optimization_algorithm"/>
+    </DataPropertyDomain>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S5</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Autonomous_vehicle"/>
+                <Variable IRI="#x"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Route"/>
+                <Variable IRI="#r"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#detectsObstacle"/>
+                <Variable IRI="#s"/>
+                <Variable IRI="#o"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#change_route"/>
+                <Variable IRI="#x"/>
+                <Variable IRI="#r"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S7</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Autonomous_vehicle"/>
+                <Variable IRI="#x"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#uses_plan"/>
+                <Variable IRI="#x"/>
+                <Variable IRI="#pla"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#package"/>
+                <Variable IRI="#p"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#deliversPackage"/>
+                <Variable IRI="#x"/>
+                <Variable IRI="#p"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S9</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Autonomous_vehicle"/>
+                <Variable IRI="#x"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#uses_plan"/>
+                <Variable IRI="#x"/>
+                <Variable IRI="#pla"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#package"/>
+                <Variable IRI="#p"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#minimize_delivery_time"/>
+                <Variable IRI="#x"/>
+                <Variable IRI="#p"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S8</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Autonomous_vehicle"/>
+                <Variable IRI="#x"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#plan"/>
+                <Variable IRI="#pla"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#uses_plan"/>
+                <Variable IRI="#x"/>
+                <Variable IRI="#pla"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S3</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Autonomous_vehicle"/>
+                <Variable IRI="http://www.semanticweb.org/lenovo/ontologies/2024/8/multi-agent#x"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Sensor"/>
+                <Variable IRI="http://www.semanticweb.org/lenovo/ontologies/2024/8/multi-agent#s"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#usesSensor"/>
+                <Variable IRI="http://www.semanticweb.org/lenovo/ontologies/2024/8/multi-agent#x"/>
+                <Variable IRI="http://www.semanticweb.org/lenovo/ontologies/2024/8/multi-agent#s"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S2</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Autonomous_vehicle"/>
+                <Variable IRI="http://www.semanticweb.org/lenovo/ontologies/2024/8/multi-agent#x"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasTrafficLightState"/>
+                <Variable IRI="http://www.semanticweb.org/lenovo/ontologies/2024/8/multi-agent#x"/>
+                <Variable IRI="http://www.semanticweb.org/lenovo/ontologies/2024/8/multi-agent#state"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#Has_Position"/>
+                <Variable IRI="http://www.semanticweb.org/lenovo/ontologies/2024/8/multi-agent#x"/>
+                <Variable IRI="http://www.semanticweb.org/lenovo/ontologies/2024/8/multi-agent#p"/>
+            </ObjectPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
+                <Variable IRI="http://www.semanticweb.org/lenovo/ontologies/2024/8/multi-agent#state"/>
+                <Literal>red</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#stop_v"/>
+                <Variable IRI="http://www.semanticweb.org/lenovo/ontologies/2024/8/multi-agent#x"/>
+                <Variable IRI="http://www.semanticweb.org/lenovo/ontologies/2024/8/multi-agent#p"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S1</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Autonomous_vehicle"/>
+                <Variable IRI="http://www.semanticweb.org/lenovo/ontologies/2024/8/multi-agent#x"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#detectsObstacle"/>
+                <Variable IRI="http://www.semanticweb.org/lenovo/ontologies/2024/8/multi-agent#x"/>
+                <Variable IRI="http://www.semanticweb.org/lenovo/ontologies/2024/8/multi-agent#o"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#avoids"/>
+                <Variable IRI="http://www.semanticweb.org/lenovo/ontologies/2024/8/multi-agent#x"/>
+                <Variable IRI="http://www.semanticweb.org/lenovo/ontologies/2024/8/multi-agent#o"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S6</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#planner"/>
+                <Variable IRI="#pl"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#uses_GPS"/>
+                <Variable IRI="#pl"/>
+                <Variable IRI="#g"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#usesSensor"/>
+                <Variable IRI="#pl"/>
+                <Variable IRI="#s"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#use_algorithm"/>
+                <Variable IRI="#pl"/>
+                <Variable IRI="#a"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#plan"/>
+                <Variable IRI="#pla"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#generate__plans"/>
+                <Variable IRI="#pl"/>
+                <Variable IRI="#pla"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S4</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#usesSensor"/>
+                <Variable IRI="http://www.semanticweb.org/lenovo/ontologies/2024/8/multi-agent#x"/>
+                <Variable IRI="http://www.semanticweb.org/lenovo/ontologies/2024/8/multi-agent#s"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#detectsObstacle"/>
+                <Variable IRI="http://www.semanticweb.org/lenovo/ontologies/2024/8/multi-agent#s"/>
+                <Variable IRI="http://www.semanticweb.org/lenovo/ontologies/2024/8/multi-agent#o"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#detectsObstacle"/>
+                <Variable IRI="http://www.semanticweb.org/lenovo/ontologies/2024/8/multi-agent#x"/>
+                <Variable IRI="http://www.semanticweb.org/lenovo/ontologies/2024/8/multi-agent#o"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
