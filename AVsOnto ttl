@@ -1,0 +1,1237 @@
+@prefix : <http://www.semanticweb.org/lenovo/ontologies/2024/8/multi-agent> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/lenovo/ontologies/2024/8/multi-agent> .
+
+<http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto> rdf:type owl:Ontology ;
+                                                               rdfs:comment "this is ontology about vehicles"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#Communicate_with
+:Communicate_with rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Agent ,
+                              :Autonomous_vehicle ;
+                  rdfs:range :Agent ,
+                             :Control_system .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#Has_Position
+:Has_Position rdf:type owl:ObjectProperty ;
+              rdfs:domain :Agent ,
+                          :Autonomous_vehicle ;
+              rdfs:range :Position .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#Is_Controled_by
+:Is_Controled_by rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Agent ,
+                             :Autonomous_vehicle ;
+                 rdfs:range :Agent ,
+                            :Control_system .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#Is_delivered_to
+:Is_delivered_to rdf:type owl:ObjectProperty ;
+                 rdfs:domain :package ;
+                 rdfs:range :Destination .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#avoids
+:avoids rdf:type owl:ObjectProperty ;
+        rdfs:domain :Agent ,
+                    :Autonomous_vehicle ;
+        rdfs:range :Obstacles .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#change_route
+:change_route rdf:type owl:ObjectProperty ;
+              rdfs:domain :Agent ,
+                          :Autonomous_vehicle ;
+              rdfs:range :Accident ,
+                         :Obstacles ,
+                         :Road_work .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#controll
+:controll rdf:type owl:ObjectProperty ;
+          rdfs:domain :Agent ,
+                      :Control_system ;
+          rdfs:range :Agent ,
+                     :Autonomous_vehicle .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#deliversPackage
+:deliversPackage rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Agent ,
+                             :Autonomous_vehicle ;
+                 rdfs:range :Delivery_Package ,
+                            :Objective .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#detectsObstacle
+:detectsObstacle rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Agent ,
+                             :Autonomous_vehicle ;
+                 rdfs:range :Obstacles .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#follow
+:follow rdf:type owl:ObjectProperty ;
+        rdfs:domain :Agent ,
+                    :Autonomous_vehicle ;
+        rdfs:range :TrafficRules .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#generate__plans
+:generate__plans rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Agent ,
+                             :planner ;
+                 rdfs:range :plan .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#hasDestination
+:hasDestination rdf:type owl:ObjectProperty ;
+                rdfs:domain :Agent ,
+                            :Autonomous_vehicle ;
+                rdfs:range :Destination .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#hasTrafficLightState
+:hasTrafficLightState rdf:type owl:ObjectProperty ;
+                      rdfs:domain :Agent ,
+                                  :Autonomous_vehicle ;
+                      rdfs:range :TrafficRules ,
+                                 :Traffic_Light .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#hasWeatherCondition
+:hasWeatherCondition rdf:type owl:ObjectProperty ;
+                     rdfs:domain :Environment ;
+                     rdfs:range :Obstacles ,
+                                :Weather_conditions .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#has_planner
+:has_planner rdf:type owl:ObjectProperty ;
+             rdfs:domain :Autonomous_vehicle .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#limit_speed
+:limit_speed rdf:type owl:ObjectProperty ;
+             rdfs:domain :Agent ,
+                         :Autonomous_vehicle ;
+             rdfs:range :Obstacles ,
+                        :RoadUser ,
+                        :Speed_Limit_Sign ,
+                        :TrafficRules ,
+                        :Weather_conditions .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#minimize_delivery_time
+:minimize_delivery_time rdf:type owl:ObjectProperty ;
+                        rdfs:domain :Agent ,
+                                    :Autonomous_vehicle ;
+                        rdfs:range :Minimize_delivery_time ,
+                                   :Objective .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#operatesInEnvironment
+:operatesInEnvironment rdf:type owl:ObjectProperty ;
+                       rdfs:domain :Agent ,
+                                   :Autonomous_vehicle ;
+                       rdfs:range :Environment .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#stop_v
+:stop_v rdf:type owl:ObjectProperty ;
+        rdfs:domain :Agent ,
+                    :Autonomous_vehicle ;
+        rdfs:range :Stop_Sign ,
+                   :TrafficRules ,
+                   :Traffic_Light ,
+                   :red .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#use_algorithm
+:use_algorithm rdf:type owl:ObjectProperty ;
+               rdfs:domain :Agent ,
+                           :planner ;
+               rdfs:range :optimization_algorithm .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#usesSensor
+:usesSensor rdf:type owl:ObjectProperty ;
+            rdfs:domain :Agent ,
+                        :Autonomous_vehicle ;
+            rdfs:range :Agent ,
+                       :Sensor .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#uses_GPS
+:uses_GPS rdf:type owl:ObjectProperty ;
+          rdfs:domain :Agent ,
+                      :Control_system ,
+                      :Position ,
+                      :planner ;
+          rdfs:range :GPS .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#uses_plan
+:uses_plan rdf:type owl:ObjectProperty ;
+           rdfs:domain :Agent ,
+                       :Autonomous_vehicle ;
+           rdfs:range :Agent ,
+                      :planner .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#Address_Location
+:Address_Location rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#Color
+:Color rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Agent ,
+                   :Autonomous_vehicle .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#Control_system
+:Control_system rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Agent ,
+                            :Control_system .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#Delivery_address
+:Delivery_address rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Destination .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#Delivery_time
+:Delivery_time rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Delivery_Package ,
+                           :Objective .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#Dimensions_P
+:Dimensions_P rdf:type owl:DatatypeProperty ;
+              rdfs:domain :package .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#GPS_coordinates
+:GPS_coordinates rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Destination .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#ID_v
+:ID_v rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Agent ,
+                  :Autonomous_vehicle .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#Num_Package
+:Num_Package rdf:type owl:DatatypeProperty ;
+             rdfs:domain :package .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#P_Priority
+:P_Priority rdf:type owl:DatatypeProperty ;
+            rdfs:domain :package .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#P_Type
+:P_Type rdf:type owl:DatatypeProperty ;
+        rdfs:domain :package .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#Recipient
+:Recipient rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Destination ,
+                       :package .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#V_type
+:V_type rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Agent ,
+                    :Autonomous_vehicle .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#Weight_P
+:Weight_P rdf:type owl:DatatypeProperty ;
+          rdfs:domain :package .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#hasBatteryLevel
+:hasBatteryLevel rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Agent ,
+                             :Autonomous_vehicle .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#hasObstacleDistance
+:hasObstacleDistance rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :Obstacles .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#hasRoadSpeedLimit
+:hasRoadSpeedLimit rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Environment .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#hasSpeed
+:hasSpeed rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Agent ,
+                      :Autonomous_vehicle .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#hasTemperature
+:hasTemperature rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Obstacles ,
+                            :Weather_conditions .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#hasVisibility
+:hasVisibility rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Obstacles ,
+                           :Weather_conditions .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#loadCapacity_v
+:loadCapacity_v rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Agent ,
+                            :Autonomous_vehicle .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#status_v
+:status_v rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Agent ,
+                      :Autonomous_vehicle .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#type_algo
+:type_algo rdf:type owl:DatatypeProperty ;
+           rdfs:domain :optimization_algorithm .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#Accident
+:Accident rdf:type owl:Class ;
+          rdfs:subClassOf :Obstacles .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#Agent
+:Agent rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#Autonomous_vehicle
+:Autonomous_vehicle rdf:type owl:Class ;
+                    rdfs:subClassOf :Agent .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#Camera
+:Camera rdf:type owl:Class ;
+        rdfs:subClassOf :Sensor .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#Control_system
+:Control_system rdf:type owl:Class ;
+                rdfs:subClassOf :Agent .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#Cyclists
+:Cyclists rdf:type owl:Class ;
+          rdfs:subClassOf :RoadUser .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#Delivery_Package
+:Delivery_Package rdf:type owl:Class ;
+                  rdfs:subClassOf :Objective .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#Destination
+:Destination rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#Energy
+:Energy rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#Environment
+:Environment rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#Foggy
+:Foggy rdf:type owl:Class ;
+       rdfs:subClassOf :Weather_conditions .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#GPS
+:GPS rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#Green
+:Green rdf:type owl:Class ;
+       rdfs:subClassOf :Traffic_Light .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#Highway
+:Highway rdf:type owl:Class ;
+         rdfs:subClassOf :Environment .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#LiDAR
+:LiDAR rdf:type owl:Class ;
+       rdfs:subClassOf :Sensor .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#Maintenance_Service
+:Maintenance_Service rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#Minimize_delivery_time
+:Minimize_delivery_time rdf:type owl:Class ;
+                        rdfs:subClassOf :Objective .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#Motorcycles
+:Motorcycles rdf:type owl:Class ;
+             rdfs:subClassOf :RoadUser .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#Objective
+:Objective rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#Obstacles
+:Obstacles rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#Orang
+:Orang rdf:type owl:Class ;
+       rdfs:subClassOf :Traffic_Light .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#Pedestrians
+:Pedestrians rdf:type owl:Class ;
+             rdfs:subClassOf :RoadUser .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#Position
+:Position rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#Radar
+:Radar rdf:type owl:Class ;
+       rdfs:subClassOf :Sensor .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#Rainy
+:Rainy rdf:type owl:Class ;
+       rdfs:subClassOf :Weather_conditions .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#RoadUser
+:RoadUser rdf:type owl:Class ;
+          rdfs:subClassOf :Obstacles .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#Road_work
+:Road_work rdf:type owl:Class ;
+           rdfs:subClassOf :Obstacles .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#Route
+:Route rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#RuralRoad
+:RuralRoad rdf:type owl:Class ;
+           rdfs:subClassOf :Environment .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#Sensor
+:Sensor rdf:type owl:Class ;
+        rdfs:subClassOf :Agent .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#Snowy
+:Snowy rdf:type owl:Class ;
+       rdfs:subClassOf :Weather_conditions .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#Speed_Limit_Sign
+:Speed_Limit_Sign rdf:type owl:Class ;
+                  rdfs:subClassOf :TrafficRules .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#Stop_Sign
+:Stop_Sign rdf:type owl:Class ;
+           rdfs:subClassOf :TrafficRules .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#TrafficRules
+:TrafficRules rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#Traffic_Light
+:Traffic_Light rdf:type owl:Class ;
+               rdfs:subClassOf :TrafficRules .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#UltrasonicSensor
+:UltrasonicSensor rdf:type owl:Class ;
+                  rdfs:subClassOf :Sensor .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#UrbanRoad
+:UrbanRoad rdf:type owl:Class ;
+           rdfs:subClassOf :Environment .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#Weather_conditions
+:Weather_conditions rdf:type owl:Class ;
+                    rdfs:subClassOf :Obstacles .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#cars
+:cars rdf:type owl:Class ;
+      rdfs:subClassOf :RoadUser .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#clear
+:clear rdf:type owl:Class ;
+       rdfs:subClassOf :Weather_conditions .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#optimization_algorithm
+:optimization_algorithm rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#package
+:package rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#plan
+:plan rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#planner
+:planner rdf:type owl:Class ;
+         rdfs:subClassOf :Agent .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#red
+:red rdf:type owl:Class ;
+     rdfs:subClassOf :Traffic_Light .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#ClearWeather1
+:ClearWeather1 rdf:type owl:NamedIndividual ,
+                        :Obstacles ,
+                        :Weather_conditions .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#ControlSystem1
+:ControlSystem1 rdf:type owl:NamedIndividual ,
+                         :Agent ,
+                         :Control_system .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#ControlSystem2
+:ControlSystem2 rdf:type owl:NamedIndividual ,
+                         :Agent ,
+                         :Control_system .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#ControlSystem3
+:ControlSystem3 rdf:type owl:NamedIndividual ,
+                         :Agent ,
+                         :Control_system .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#DeliveryPackage1
+:DeliveryPackage1 rdf:type owl:NamedIndividual ,
+                           :Objective .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#Destination1
+:Destination1 rdf:type owl:NamedIndividual ,
+                       :Destination .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#Destination2
+:Destination2 rdf:type owl:NamedIndividual ,
+                       :Destination .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#Destination3
+:Destination3 rdf:type owl:NamedIndividual ,
+                       :Destination .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#FoggyWeather1
+:FoggyWeather1 rdf:type owl:NamedIndividual ,
+                        :Foggy ,
+                        :Obstacles ,
+                        :Weather_conditions .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#GPS
+:GPS rdf:type owl:NamedIndividual ,
+              :GPS .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#GreenLight1
+:GreenLight1 rdf:type owl:NamedIndividual ,
+                      :Green ,
+                      :TrafficRules ,
+                      :Traffic_Light .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#Highway1
+:Highway1 rdf:type owl:NamedIndividual ,
+                   :Environment .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#MaintenanceService1
+:MaintenanceService1 rdf:type owl:NamedIndividual ,
+                              :Maintenance_Service .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#MinimizeDeliveryTimeObjective1
+:MinimizeDeliveryTimeObjective1 rdf:type owl:NamedIndividual ,
+                                         :Objective .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#Obstacle
+:Obstacle rdf:type owl:NamedIndividual ,
+                   :Obstacles .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#Package1
+:Package1 rdf:type owl:NamedIndividual ,
+                   :package ;
+          :Delivery_address "700 dwellings, block A, number 15" ;
+          :Dimensions_P "30 cm x 20 cm x 10 cm" ;
+          :Num_Package "TRK12345" ;
+          :P_Priority "High" ;
+          :P_Type "Perishable" ;
+          :Recipient "Amara Fatima Zahra" ;
+          :Weight_P "1.5 kg" .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#Package2
+:Package2 rdf:type owl:NamedIndividual ,
+                   :package ;
+          :Delivery_address "Sonatiba, block C, number 35" ;
+          :Dimensions_P "50 cm x 40 cm x 30 cm" ;
+          :Num_Package "TRK67890" ;
+          :P_Priority "Low" ;
+          :P_Type "Fragile" ;
+          :Recipient "Guerroudj Bochra" ;
+          :Weight_P "5.0 kg" .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#Package3
+:Package3 rdf:type owl:NamedIndividual ,
+                   :package ;
+          :Delivery_address "District 128, No. 9" ;
+          :Dimensions_P "100 cm x 80 cm x 50 cm" ;
+          :Num_Package "TRK54321" ;
+          :P_Priority "Medium" ;
+          :P_Type "LargeItem" ;
+          :Recipient "Sid Ali" ;
+          :Weight_P "20.0 kg" .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#Position1
+:Position1 rdf:type owl:NamedIndividual ,
+                    :Position .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#Position2
+:Position2 rdf:type owl:NamedIndividual ,
+                    :Position .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#Position3
+:Position3 rdf:type owl:NamedIndividual ,
+                    :Position .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#RainyWeather1
+:RainyWeather1 rdf:type owl:NamedIndividual ,
+                        :Obstacles ,
+                        :Rainy ,
+                        :Weather_conditions .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#RedLight1
+:RedLight1 rdf:type owl:NamedIndividual ,
+                    :TrafficRules ,
+                    :Traffic_Light ,
+                    :red .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#RoadUser1
+:RoadUser1 rdf:type owl:NamedIndividual ,
+                    :Obstacles ,
+                    :RoadUser .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#RoadWork1
+:RoadWork1 rdf:type owl:NamedIndividual ,
+                    :Obstacles ,
+                    :Road_work .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#RuralRoad1
+:RuralRoad1 rdf:type owl:NamedIndividual ,
+                     :Environment .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#SnowyWeather1
+:SnowyWeather1 rdf:type owl:NamedIndividual ,
+                        :Obstacles ,
+                        :Snowy ,
+                        :Weather_conditions .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#SpeedLimitSign1
+:SpeedLimitSign1 rdf:type owl:NamedIndividual ,
+                          :Speed_Limit_Sign ,
+                          :TrafficRules .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#StopSign1
+:StopSign1 rdf:type owl:NamedIndividual ,
+                    :Stop_Sign ,
+                    :TrafficRules .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#TrafficLight1
+:TrafficLight1 rdf:type owl:NamedIndividual ,
+                        :TrafficRules ,
+                        :Traffic_Light .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#UrbanRoad1
+:UrbanRoad1 rdf:type owl:NamedIndividual ,
+                     :Environment .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#algorithm
+:algorithm rdf:type owl:NamedIndividual ,
+                    :optimization_algorithm .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#plan1
+:plan1 rdf:type owl:NamedIndividual ,
+                :Agent ,
+                :plan ,
+                :planner ;
+       :generate__plans :planner1 .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#plan2
+:plan2 rdf:type owl:NamedIndividual ,
+                :Agent ,
+                :plan ,
+                :planner ;
+       :generate__plans :planner2 .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#plan3
+:plan3 rdf:type owl:NamedIndividual ,
+                :Agent ,
+                :plan ,
+                :planner ;
+       :generate__plans :planner3 .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#planner1
+:planner1 rdf:type owl:NamedIndividual ,
+                   :Agent ,
+                   :planner ;
+          :change_route :route ;
+          :deliversPackage :Package1 ;
+          :generate__plans :plan1 ;
+          :minimize_delivery_time :Package1 ;
+          :use_algorithm :algorithm ;
+          :usesSensor :Position1 ,
+                      :sensors ;
+          :uses_GPS :GPS ;
+          :type_algo "A*" .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#planner2
+:planner2 rdf:type owl:NamedIndividual ,
+                   :Agent ,
+                   :planner ;
+          :change_route :route ;
+          :deliversPackage :Package2 ;
+          :generate__plans :plan2 ;
+          :minimize_delivery_time :Package2 ;
+          :use_algorithm :algorithm ;
+          :usesSensor :Position2 ,
+                      :sensors ;
+          :uses_GPS :GPS ;
+          :type_algo "Ant Colony Optimization (ACO)" .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#planner3
+:planner3 rdf:type owl:NamedIndividual ,
+                   :Agent ,
+                   :planner ;
+          :change_route :route ;
+          :deliversPackage :Package3 ;
+          :generate__plans :plan3 ;
+          :minimize_delivery_time :Package3 ;
+          :use_algorithm :algorithm ;
+          :usesSensor :Position3 ,
+                      :sensors ;
+          :uses_GPS :GPS ;
+          :type_algo "A*" .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#route
+:route rdf:type owl:NamedIndividual ,
+                :Accident ,
+                :Obstacles ,
+                :Road_work ,
+                :Route .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#sensors
+:sensors rdf:type owl:NamedIndividual ,
+                  :Agent ,
+                  :Sensor .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#vehicle_1
+:vehicle_1 rdf:type owl:NamedIndividual ,
+                    :Agent ,
+                    :Autonomous_vehicle ;
+           :Communicate_with :ControlSystem1 ;
+           :Has_Position :Position1 ;
+           :avoids :Obstacle ;
+           :change_route :route ;
+           :deliversPackage :Package1 ;
+           :detectsObstacle :Obstacle ;
+           :has_planner :planner1 ;
+           :minimize_delivery_time :Package1 ;
+           :usesSensor :Position1 ,
+                       :sensors ;
+           :uses_plan :plan1 ;
+           :Color "red"@en ;
+           :ID_v "12A34" ;
+           :loadCapacity_v "50.0"^^xsd:float ;
+           :status_v "Available" .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#vehicle_2
+:vehicle_2 rdf:type owl:NamedIndividual ,
+                    :Agent ,
+                    :Autonomous_vehicle ;
+           :Communicate_with :ControlSystem2 ;
+           :Has_Position :Position2 ;
+           :avoids :Obstacle ;
+           :change_route :route ;
+           :deliversPackage :Package2 ;
+           :detectsObstacle :Obstacle ;
+           :has_planner :planner2 ;
+           :minimize_delivery_time :Package2 ;
+           :usesSensor :Position2 ,
+                       :sensors ;
+           :uses_plan :plan2 ;
+           :Color "red"@en ;
+           :ID_v "12B34" ;
+           :loadCapacity_v "100.0"^^xsd:float ;
+           :status_v "In transit" .
+
+
+###  http://www.semanticweb.org/lenovo/ontologies/2024/8/AVsonto#vehicle_3
+:vehicle_3 rdf:type owl:NamedIndividual ,
+                    :Agent ,
+                    :Autonomous_vehicle ;
+           :Communicate_with :ControlSystem3 ;
+           :Has_Position :Position3 ;
+           :avoids :Obstacle ;
+           :change_route :route ;
+           :deliversPackage :Package3 ;
+           :detectsObstacle :Obstacle ;
+           :has_planner :planner3 ;
+           :minimize_delivery_time :Package3 ;
+           :usesSensor :Position3 ,
+                       :sensors ;
+           :uses_plan :plan3 ;
+           :Color "red"@en ;
+           :ID_v "12C34" ;
+           :loadCapacity_v "500.0"^^xsd:float ;
+           :status_v "In maintenance" .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+:x rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:r rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:s rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:o rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:pla rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:p rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/lenovo/ontologies/2024/8/multi-agent#x> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/lenovo/ontologies/2024/8/multi-agent#s> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/lenovo/ontologies/2024/8/multi-agent#state> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/lenovo/ontologies/2024/8/multi-agent#p> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/lenovo/ontologies/2024/8/multi-agent#o> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:pl rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:g rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:a rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "S5" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Autonomous_vehicle ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :x
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :Route ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :r
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :detectsObstacle ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> :s ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> :o
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :change_route ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :x ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :r
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "S7" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Autonomous_vehicle ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :x
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :uses_plan ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :x ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> :pla
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> :package ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> :p
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :deliversPackage ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :x ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :p
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "S9" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Autonomous_vehicle ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :x
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :uses_plan ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :x ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> :pla
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> :package ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> :p
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :minimize_delivery_time ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :x ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :p
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "S8" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Autonomous_vehicle ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :x
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :plan ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :pla
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :uses_plan ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :x ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :pla
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "S3" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Autonomous_vehicle ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/lenovo/ontologies/2024/8/multi-agent#x>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :Sensor ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/lenovo/ontologies/2024/8/multi-agent#s>
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :usesSensor ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/lenovo/ontologies/2024/8/multi-agent#x> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/lenovo/ontologies/2024/8/multi-agent#s>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "S2" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Autonomous_vehicle ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/lenovo/ontologies/2024/8/multi-agent#x>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasTrafficLightState ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/lenovo/ontologies/2024/8/multi-agent#x> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/lenovo/ontologies/2024/8/multi-agent#state>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :Has_Position ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/lenovo/ontologies/2024/8/multi-agent#x> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/lenovo/ontologies/2024/8/multi-agent#p>
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#equal> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first <http://www.semanticweb.org/lenovo/ontologies/2024/8/multi-agent#state> ;
+                                                                                                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                rdf:first "red" ;
+                                                                                                                                                rdf:rest rdf:nil
+                                                                                                                                              ]
+                                                                                                                                   ]
+                                                                                      ] ;
+                                                                            rdf:rest rdf:nil
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :stop_v ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/lenovo/ontologies/2024/8/multi-agent#x> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/lenovo/ontologies/2024/8/multi-agent#p>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "S1" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Autonomous_vehicle ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/lenovo/ontologies/2024/8/multi-agent#x>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :detectsObstacle ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/lenovo/ontologies/2024/8/multi-agent#x> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/lenovo/ontologies/2024/8/multi-agent#o>
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :avoids ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/lenovo/ontologies/2024/8/multi-agent#x> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/lenovo/ontologies/2024/8/multi-agent#o>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "S6" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :planner ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :pl
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :uses_GPS ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :pl ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> :g
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :usesSensor ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> :pl ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> :s
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> :use_algorithm ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> :pl ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument2> :a
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#classPredicate> :plan ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> :pla
+                                                                                                 ] ;
+                                                                                       rdf:rest rdf:nil
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :generate__plans ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :pl ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :pla
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "S4" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :usesSensor ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/lenovo/ontologies/2024/8/multi-agent#x> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/lenovo/ontologies/2024/8/multi-agent#s>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :detectsObstacle ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/lenovo/ontologies/2024/8/multi-agent#s> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/lenovo/ontologies/2024/8/multi-agent#o>
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :detectsObstacle ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/lenovo/ontologies/2024/8/multi-agent#x> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/lenovo/ontologies/2024/8/multi-agent#o>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
